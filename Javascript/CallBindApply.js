@@ -57,3 +57,14 @@ let toy = new Toy('Car', 500);
 
 console.log(pizza);
 console.log(toy);
+
+function getDetails(...args) {
+  console.log(this.name + ' ' + this.title + ' From ' + args);
+}
+
+const myObj = {
+  name: 'Subham',
+  title: 'Panda',
+};
+
+getDetails.apply(myObj, ['Gunupur', 'Rayagada']);
