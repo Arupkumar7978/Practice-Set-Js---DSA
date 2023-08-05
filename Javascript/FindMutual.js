@@ -7,21 +7,24 @@ const friendsGroup = {
 };
 
 const getMutualFriends = (friendsGroup, person) => {
-  const friendList = friendsGroup[person];  
+  const friendList = friendsGroup[person];
 
   if (friendList && friendList.length) {
-    const mutualFriendsList = [...friendList];  
+    const mutualFriendsList = [...friendList];
 
-    for( let friend of friendList)
-    {
-        const mutualFriends = getMutualFriends(friendsGroup , friend);  
-        mutualFriendsList.push(...mutualFriends);
+    for (let friend of friendList) {
+      const mutualFriends = getMutualFriends(friendsGroup, friend);
+      mutualFriendsList.push(...mutualFriends);
     }
-    return mutualFriendsList ;
+    return mutualFriendsList;
   }
-  return [] ;
+  return [];
 };
 
 const mutualFriends = getMutualFriends(friendsGroup, 'a');
 
-console.log("a:" , ...mutualFriends);
+// console.log("a:" , ...mutualFriends);
+
+let mutual = friendsGroup['a'];
+let mutual2 = [...mutual];
+console.log(mutual2);

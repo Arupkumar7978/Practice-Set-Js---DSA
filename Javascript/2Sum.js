@@ -15,6 +15,6 @@ const getTwoSum = (arr , target) => {
 }
 
 
-const sum = getTwoSum(arr , 250);
+const sum = getTwoSum(arr , 400);
 console.log(sum);
 
