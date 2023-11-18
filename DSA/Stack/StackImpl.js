@@ -1,6 +1,6 @@
 /* 
 NOTE :
-1. Generally , it does not return's anything in case of clear , but i have return true here for test purpose . 
+1. Generally , it does not return's anything in case of clear , but i have returned true here for test purpose . 
 */
 
 function Stack() {
